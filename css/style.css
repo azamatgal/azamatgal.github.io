@@ -466,7 +466,7 @@ template {
     background-image: url("../img/header_bg_medium.jpg");
     margin-left: 0; }
   .header__advantages-list {
-    max-width: 480px;
+    max-width: 490px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; }
@@ -1112,6 +1112,7 @@ template {
 
 .ind-order__slyder-image-block {
   position: relative;
+  overflow: hidden;
   width: 241px;
   height: 113px;
   margin: 0 auto; }
@@ -1627,8 +1628,12 @@ template {
   letter-spacing: 0;
   color: #f50049; }
 
+.order-form__select::-ms-expand {
+  display: none; }
+
 .order-form__select {
   -webkit-appearance: none;
+  -moz-appearance: none;
   background: none;
   padding: 0;
   border: none;
